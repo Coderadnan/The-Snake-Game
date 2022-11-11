@@ -1,0 +1,49 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+.body{
+    background: url('/css/snake 3.jpg') ;
+    min-height: 100vh;
+    background-size: 100vw 100vh;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#board{
+    background: linear-gradient(green,yellow);
+    width: 90vmin;
+    height: 92vmin;
+    border: 2px solid black;
+    border-radius: 20px;
+    display: grid;
+    grid-template-rows: repeat(18 ,1fr);
+    grid-template-columns: repeat(18, 1fr);
+
+}
+.head{
+    background:linear-gradient(purple,black);
+    border-radius: 10px;
+    border: 2px solid black;
+}
+.snake{
+    background-color: purple;
+    border-radius: 10px;
+}
+.food{
+    background: linear-gradient(orange,yellow);
+    border: 2px solid black;
+    border-radius: 20px;
+}
+#scoreBox{
+    position: absolute;
+    top: 15px;
+    right: 100px;
+    font-size: 35px;
+    background-color: black;
+    color: azure;
+    border-radius: 10px;
+    padding: 0 10px;
+    
+}
